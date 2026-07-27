@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Senthoor Auto Works – Your trusted local car service workshop. Quality maintenance, honest pricing, and expert mechanics." />
+  <title>Senthoor Auto Works | Local Car Service Workshop</title>
+
+  <!-- Google Fonts: Inter & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar py-2 bg-dark text-white">
+    <div class="container-xl d-flex justify-content-between align-items-center fs-7">
+      <div>
+        <i class="fas fa-clock text-red me-2"></i>Mon - Sat: 10:00 AM - 7:00 PM
+        <span class="d-none d-md-inline ms-3"><i class="fas fa-envelope text-red me-2"></i>manojmurugesanv@gmail.com</span>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="tel:9787561810" class="text-white text-decoration-none fw-semibold"><i class="fas fa-phone text-red me-1"></i> +91 97875 61810</a>
+        <a href="https://wa.me/919787561810" class="text-success text-decoration-none d-none d-sm-inline" target="_blank"><i class="fab fa-whatsapp me-1"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="sticky-top bg-white border-bottom shadow-sm">
+    <div class="container-xl">
+      <nav class="navbar navbar-expand-lg py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img src="logo.jpg.jpeg" alt="Senthoor Auto Works Logo" height="40" class="me-1 rounded-1" onerror="this.style.display='none'" />
+          <div>
+            <span class="font-mono fw-bold text-dark fs-4 d-block lh-1">SENTHOOR AUTO WORKS</span>
+            <small class="text-muted fs-7">Your Friendly Local Car Workshop</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <i class="fas fa-bars fs-3 text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold fs-6 gap-lg-2">
+            <li class="nav-item"><a class="nav-link text-dark active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#why-us">Why Choose Us</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+          </ul>
+          <div class="ms-lg-3">
+            <a href="tel:9787561810" class="btn btn-red px-3 py-2 rounded-1 fw-bold fs-7">
+              <i class="fas fa-phone me-1"></i> Call Workshop
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section py-5 bg-light position-relative" id="home">
+    <div class="container-xl">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge bg-red-subtle text-red font-mono px-3 py-2 text-uppercase mb-3">Est. 6 Months Ago • Local & Independent</span>
+          <h1 class="display-5 fw-bold text-dark mb-3">Honest & Quality Car Care Right In Your Neighborhood</h1>
+          <p class="lead text-muted mb-4 fs-6">
+            Welcome to <strong>Senthoor Auto Works</strong>. We provide local car owners with transparent, reliable, and affordable auto repairs and maintenance for all vehicle makes.
+          </p>
+
+          <!-- Local Stats Strip -->
+          <div class="row g-3 mb-4 text-center">
+            <div class="col-3">
+              <div class="p-2 bg-white border rounded-1 shadow-sm">
+                <h4 class="fw-bold text-red mb-0">6 Mo+</h4>
+                <small class="text-muted fs-7">Serving You</small>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="p-2 bg-white border rounded-1 shadow-sm">
+                <h4 class="fw-bold text-dark mb-0">500+</h4>
+                <small class="text-muted fs-7">Cars Serviced</small>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="p-2 bg-white border rounded-1 shadow-sm">
+                <h4 class="fw-bold text-dark mb-0">100%</h4>
+                <small class="text-muted fs-7">Genuine Parts</small>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="p-2 bg-white border rounded-1 shadow-sm">
+                <h4 class="fw-bold text-red mb-0">5.0 ★</h4>
+                <small class="text-muted fs-7">Customer Rating</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-red btn-lg px-4 fs-6 fw-bold">
+              <i class="fas fa-calendar-check me-2"></i>Book Service
+            </a>
+            <a href="https://wa.me/919787561810" class="btn btn-outline-success btn-lg px-4 fs-6 fw-bold" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="rounded-2 overflow-hidden shadow border">
+            <img src="hero.jpg" alt="Senthoor Auto Works Workshop" class="img-fluid w-100 object-fit-cover" style="height: 380px;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT US ================= -->
+  <section class="py-5 bg-white border-bottom" id="about">
+    <div class="container-xl">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <img src="hero.jpg" alt="Senthoor Auto Works Mechanic Team" class="img-fluid rounded-2 border shadow-sm" style="height: 340px; width: 100%; object-fit: cover;" />
+        </div>
+        <div class="col-md-7">
+          <span class="text-red font-mono text-uppercase fw-bold fs-7">About Senthoor Auto Works</span>
+          <h2 class="fw-bold text-dark display-6 mt-1 mb-3">Built On Personal Trust & Quality Work</h2>
+          <p class="text-muted">
+            Founded 6 months ago by experienced mechanics, <strong>Senthoor Auto Works</strong> was born to give local car owners a dependable, transparent, and affordable alternative for complete auto care.
+          </p>
+          <p class="text-muted">
+            We treat every car as if it were our own. Whether you come in for a quick oil change, brake check, or engine diagnostics, you'll always deal directly with our friendly mechanics who explain what your car needs in plain, honest language.
+          </p>
+
+          <div class="row g-3 pt-2">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-circle-check text-red fs-5"></i>
+                <span class="fw-semibold text-dark fs-6">Personalized Attention</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-circle-check text-red fs-5"></i>
+                <span class="fw-semibold text-dark fs-6">Fair & Transparent Rates</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-circle-check text-red fs-5"></i>
+                <span class="fw-semibold text-dark fs-6">Same-Day Basic Service</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-circle-check text-red fs-5"></i>
+                <span class="fw-semibold text-dark fs-6">100% Genuine Spare Parts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="py-5 bg-light" id="services">
+    <div class="container-xl">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-red font-mono text-uppercase fw-bold fs-7">What We Do</span>
+        <h2 class="fw-bold text-dark display-6 mt-1">Our Core Services</h2>
+        <p class="text-muted">Essential repair and maintenance services for all hatchbacks, sedans, and SUVs.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded-1 h-100 shadow-sm transition-all service-card">
+            <div class="text-red mb-3 fs-2"><i class="fas fa-car"></i></div>
+            <h4 class="fw-bold fs-5 text-dark">General Car Servicing</h4>
+            <p class="text-muted fs-6 mb-3">Multi-point safety inspection, liquid top-ups, filter cleaning, and full vehicle checkup.</p>
+            <a href="#contact" class="text-red font-mono fw-bold text-decoration-none fs-7 text-uppercase">Book Now <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded-1 h-100 shadow-sm transition-all service-card">
+            <div class="text-red mb-3 fs-2"><i class="fas fa-laptop-code"></i></div>
+            <h4 class="fw-bold fs-5 text-dark">Engine Computer Diagnostics</h4>
+            <p class="text-muted fs-6 mb-3">Computerized check-engine scanning to diagnose warning lights, sensors, and electronic faults.</p>
+            <a href="#contact" class="text-red font-mono fw-bold text-decoration-none fs-7 text-uppercase">Book Now <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded-1 h-100 shadow-sm transition-all service-card">
+            <div class="text-red mb-3 fs-2"><i class="fas fa-oil-can"></i></div>
+            <h4 class="fw-bold fs-5 text-dark">Oil & Filter Change</h4>
+            <p class="text-muted fs-6 mb-3">Premium synthetic engine oil replacement and new OEM filter installation to keep engine smooth.</p>
+            <a href="#contact" class="text-red font-mono fw-bold text-decoration-none fs-7 text-uppercase">Book Now <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded-1 h-100 shadow-sm transition-all service-card">
+            <div class="text-red mb-3 fs-2"><i class="fas fa-compact-disc"></i></div>
+            <h4 class="fw-bold fs-5 text-dark">Brake Pads & Disc Repair</h4>
+            <p class="text-muted fs-6 mb-3">Brake pad replacement, disc rotor inspection, and fluid checks for safe stopping power.</p>
+            <a href="#contact" class="text-red font-mono fw-bold text-decoration-none fs-7 text-uppercase">Book Now <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded-1 h-100 shadow-sm transition-all service-card">
+            <div class="text-red mb-3 fs-2"><i class="fas fa-snowflake"></i></div>
+            <h4 class="fw-bold fs-5 text-dark">AC Gas & Cooling Service</h4>
+            <p class="text-muted fs-6 mb-3">Air conditioning gas top-up, leak testing, cabin filter change, and quick evaporator cleaning.</p>
+            <a href="#contact" class="text-red font-mono fw-bold text-decoration-none fs-7 text-uppercase">Book Now <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded-1 h-100 shadow-sm transition-all service-card">
+            <div class="text-red mb-3 fs-2"><i class="fas fa-car-battery"></i></div>
+            <h4 class="fw-bold fs-5 text-dark">Battery Check & Replacement</h4>
+            <p class="text-muted fs-6 mb-3">Battery health checkup, voltage testing, and instant replacement with warranty-backed brands.</p>
+            <a href="#contact" class="text-red font-mono fw-bold text-decoration-none fs-7 text-uppercase">Book Now <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="py-5 bg-white border-bottom" id="why-us">
+    <div class="container-xl">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-red font-mono text-uppercase fw-bold fs-7">Our Workshop Promise</span>
+        <h2 class="fw-bold text-dark display-6 mt-1">Why Local Drivers Choose Senthoor Auto Works</h2>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded-1 bg-light">
+            <i class="fas fa-user-shield text-red fs-2 mb-2"></i>
+            <h5 class="fw-bold text-dark fs-6 mb-1">Experienced Mechanics</h5>
+            <p class="text-muted fs-7 mb-0">Direct interaction with skilled technicians who care.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded-1 bg-light">
+            <i class="fas fa-box-open text-red fs-2 mb-2"></i>
+            <h5 class="fw-bold text-dark fs-6 mb-1">100% Genuine Parts</h5>
+            <p class="text-muted fs-7 mb-0">Only original OEM spare parts used for your safety.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded-1 bg-light">
+            <i class="fas fa-receipt text-red fs-2 mb-2"></i>
+            <h5 class="fw-bold text-dark fs-6 mb-1">No Surprise Bills</h5>
+            <p class="text-muted fs-7 mb-0">Upfront price estimate before starting any repair.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded-1 bg-light">
+            <i class="fas fa-bolt text-red fs-2 mb-2"></i>
+            <h5 class="fw-bold text-dark fs-6 mb-1">Same-Day Return</h5>
+            <p class="text-muted fs-7 mb-0">Most routine services completed in a few hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4 PHOTO GALLERY ================= -->
+  <section class="py-5 bg-light" id="gallery">
+    <div class="container-xl">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="text-red font-mono text-uppercase fw-bold fs-7">Our Workshop In Action</span>
+        <h2 class="fw-bold text-dark display-6 mt-1">Recent Work Gallery</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-12">
+          <img src="gallery1.jpg.jpeg" alt="Senthoor Auto Works Gallery 1" class="img-fluid rounded-1 border shadow-sm" style="height: 280px; width:100%; object-fit:cover;" />
+        </div>
+        <div class="col-md-6 col-12">
+          <img src="gallery2.jpg.jpeg" alt="Senthoor Auto Works Gallery 2" class="img-fluid rounded-1 border shadow-sm" style="height: 280px; width:100%; object-fit:cover;" />
+        </div>
+        <div class="col-md-6 col-12">
+          <img src="gallery3.jpg.jpeg" alt="Senthoor Auto Works Gallery 3" class="img-fluid rounded-1 border shadow-sm" style="height: 280px; width:100%; object-fit:cover;" />
+        </div>
+        <div class="col-md-6 col-12">
+          <img src="gallery4.jpg.jpeg" alt="Senthoor Auto Works Gallery 4" class="img-fluid rounded-1 border shadow-sm" style="height: 280px; width:100%; object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCAL REVIEWS ================= -->
+  <section class="py-5 bg-white border-top" id="reviews">
+    <div class="container-xl">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="text-red font-mono text-uppercase fw-bold fs-7">Real Feedback</span>
+        <h2 class="fw-bold text-dark display-6 mt-1">What Local Customers Say</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 border rounded-1 bg-light h-100 d-flex flex-column justify-content-between">
+            <p class="text-muted fs-6 mb-3">"Ever since Senthoor Auto Works opened, I've brought both my family cars here. Honest mechanics, clear explanation, and fair pricing!"</p>
+            <div class="d-flex align-items-center gap-2">
+              <strong class="text-dark">Suresh Kumar</strong>
+              <small class="text-muted">• Honda City Owner</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 border rounded-1 bg-light h-100 d-flex flex-column justify-content-between">
+            <p class="text-muted fs-6 mb-3">"Quick AC repair and oil change. Took less than 2 hours. Very clean shop and polite staff."</p>
+            <div class="d-flex align-items-center gap-2">
+              <strong class="text-dark">Anitha R.</strong>
+              <small class="text-muted">• Hyundai i20 Owner</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 border rounded-1 bg-light h-100 d-flex flex-column justify-content-between">
+            <p class="text-muted fs-6 mb-3">"Diagnosed a brake squeal that another garage couldn't fix. Replaced pads on time. 100% recommended local garage."</p>
+            <div class="d-flex align-items-center gap-2">
+              <strong class="text-dark">Karthik V.</strong>
+              <small class="text-muted">• Maruti Swift Owner</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & APPOINTMENT ================= -->
+  <section class="py-5 bg-light border-top" id="contact">
+    <div class="container-xl">
+      <div class="row g-4">
+        <!-- Contact Details -->
+        <div class="col-lg-5">
+          <span class="text-red font-mono text-uppercase fw-bold fs-7">Visit Us</span>
+          <h2 class="fw-bold text-dark display-6 mt-1 mb-3">Book Service Or Drop By</h2>
+          <p class="text-muted mb-4">Call or WhatsApp us directly for immediate support and service appointments!</p>
+
+          <div class="mb-3"><i class="fas fa-phone text-red me-2 fs-5"></i> <strong>Phone:</strong> +91 97875 61810</div>
+          <div class="mb-3"><i class="fab fa-whatsapp text-success me-2 fs-5"></i> <strong>WhatsApp:</strong> +91 97875 61810</div>
+          <div class="mb-3"><i class="fas fa-envelope text-red me-2 fs-5"></i> <strong>Email:</strong> manojmurugesanv@gmail.com</div>
+          <div class="mb-4"><i class="fas fa-clock text-red me-2 fs-5"></i> <strong>Working Hours:</strong> Mon-Sat: 10:00 AM - 7:00 PM</div>
+        </div>
+
+        <!-- Appointment Form -->
+        <div class="col-lg-7">
+          <div class="p-4 bg-white border rounded-1 shadow-sm">
+            <h4 class="fw-bold text-dark mb-3">Schedule A Workshop Slot</h4>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control py-2" id="name" placeholder="Your Name *" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control py-2" id="phone" placeholder="Phone Number *" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control py-2" id="car" placeholder="Car Model (e.g. Swift 2020) *" required />
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select py-2" id="service" required>
+                    <option value="" selected disabled>Select Service Needed *</option>
+                    <option>General Car Service</option>
+                    <option>Engine Diagnostics</option>
+                    <option>Oil & Filter Replacement</option>
+                    <option>Brake Inspection & Repair</option>
+                    <option>AC Service & Gas Topup</option>
+                    <option>Battery Check & Replace</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control py-2" id="notes" rows="3" placeholder="Additional details or specific symptoms..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-red w-100 py-2 fw-bold text-uppercase font-mono">
+                    <i class="fas fa-calendar-check me-2"></i>Send Booking Request
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="formAlert" class="alert alert-success d-none mt-3 text-center mb-0">
+              <i class="fas fa-check-circle me-1"></i> Thank you! We will call you shortly to confirm your booking.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white py-4 border-top">
+    <div class="container-xl d-flex flex-column flex-md-row justify-content-between align-items-center fs-7 text-white-50">
+      <div>
+        <strong class="text-white font-mono me-2">SENTHOOR AUTO WORKS</strong> © <span id="year"></span>. All rights reserved.
+      </div>
+      <div class="d-flex gap-3 mt-2 mt-md-0">
+        <a href="tel:9787561810" class="text-white-50 text-decoration-none"><i class="fas fa-phone text-red me-1"></i> +91 97875 61810</a>
+        <a href="mailto:manojmurugesanv@gmail.com" class="text-white-50 text-decoration-none"><i class="fas fa-envelope text-red me-1"></i> Email Us</a>
+        <a href="https://wa.me/919787561810" class="text-success text-decoration-none" target="_blank"><i class="fab fa-whatsapp me-1"></i> WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919787561810" class="float-btn float-whatsapp text-white shadow" target="_blank">
+    <i class="fab fa-whatsapp fs-4"></i>
+  </a>
+  <a href="tel:9787561810" class="float-btn float-call text-white shadow">
+    <i class="fas fa-phone fs-5"></i>
+  </a>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
