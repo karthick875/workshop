@@ -1,34 +1,53 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Auto copyright year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // WhatsApp Booking Form Handler
   const form = document.getElementById('contactForm');
   const alertBox = document.getElementById('formAlert');
 
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const submitBtn = form.querySelector('button[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+
+      const name = document.getElementById('name')?.value || '';
+      const phone = document.getElementById('phone')?.value || '';
+      const car = document.getElementById('car')?.value || '';
+      const serviceSelect = document.getElementById('service');
+      const service = serviceSelect ? serviceSelect.options[serviceSelect.selectedIndex]?.text : '';
+      const notes = document.getElementById('notes')?.value || '';
+
+      // Format WhatsApp message cleanly
+      let message = `Hello Senthoor Auto Works! I would like to book a workshop slot:\n\n` +
+        `👤 *Name:* ${name}\n` +
+        `📞 *Phone:* ${phone}\n` +
+        `🚗 *Car Model:* ${car}\n` +
+        `🛠️ *Service Needed:* ${service}`;
+
+      if (notes.trim() !== '') {
+        message += `\n📝 *Notes:* ${notes}`;
       }
-      setTimeout(() => {
-        form.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = '<i class="fas fa-calendar-check me-2"></i>Send Booking Request';
-        }
-        if (alertBox) {
-          alertBox.classList.remove('d-none');
-          setTimeout(() => alertBox.classList.add('d-none'), 5000);
-        }
-      }, 1000);
+
+      // Create WhatsApp URL for 9787561810
+      const whatsappUrl = `https://wa.me/919787561810?text=${encodeURIComponent(message)}`;
+
+      // Show alert & Open WhatsApp
+      if (alertBox) {
+        alertBox.classList.remove('d-none');
+        setTimeout(() => alertBox.classList.add('d-none'), 5000);
+      }
+
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+
+      form.reset();
     });
   }
 
+  // Active nav link highlight on scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
